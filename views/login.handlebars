@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Blog</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
+                <h1 class="text-center">My Blog</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item"><a href="/" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Blog Home
+                    </a></li>
+                    
+                
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a href="https://facebook.com" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit recusandae repudiandae sapiente officia perspiciatis, aut aspernatur dolore asperiores, doloremque, assumenda saepe inventore eaque atque molestias. Dolorum ullam beatae illo labore.
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+ 
+            <div class="row tm-row tm-mb-120"> 
+                <div class="col-lg-6 col-md-6  col-md-12 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-20 tm-mb-20">
+                            <i class="fas fa-users-cog fa-4x tm-color-primary"></i>                            
+                        </div>                        
+                        <h2 class="mb-3 tm-color-primary tm-post-title">LOGIN</h2>
+                        <form class="form login-form">
+                            <div class="form-group">
+                                <label for="email-login">Email:</label>
+                                <input class="form-input w-100" type="text" id="email-login" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password-login">Password:</label>
+                                <input class="form-input w-100" type="password" id="password-login" />
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-info login-btn" type="button">login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6  col-md-12  tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-20 tm-mb-20">
+                            <i class="fas fa-bezier-curve fa-4x tm-color-primary"></i>
+                        </div>
+                        <h2 class="mb-3 tm-color-primary tm-post-title">SIGN UP</h2>
+                        <form class="form signup-form">
+                            <div class="form-group">
+                                <label for="username-signup">Username:</label>
+                                <input class="form-input w-100" type="text" id="username-signup" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email-signup">Email:</label>
+                                <input class="form-input w-100" type="text" id="email-signup" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password-signup">Password:</label>
+                                <input class="form-input w-100" type="password" id="password-signup" />
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-info submit-btn" type="button">signup</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>            
+            <div class="row tm-row tm-mb-60">
+                <div class="col-12">
+                    <hr class="tm-hr-primary  tm-mb-55">
+                </div>                
+            </div>        
+            
+        </main>
+    </div>
+    <script src="/javascript/login.js"></script>
+</body>
+</html>
