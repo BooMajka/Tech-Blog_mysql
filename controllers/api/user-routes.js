@@ -22,7 +22,7 @@ router.get("/:id", (req, res) => {
     include: [
       {
         model: Post,
-        attributes: ["id", "title", "description", "created_at"],
+        attributes: ["id", "title", "description", "img_url", "created_at"],
       },
       {
         model: Comment,
@@ -56,7 +56,6 @@ router.post("/", (req, res) => {
     password: req.body.password,
   })
     .then((dbUserData) => {
-      //delete this line when using sessions
   
         req.session.save(() => {
           req.session.user_id = dbUserData.id;
@@ -89,7 +88,6 @@ router.post("/login", (req, res) => {
       res.status(400).json({ message: "Incorrect password!" });
       return;
     }
-    //delete this line when using sessions
     
     req.session.save(() => {
       req.session.user_id = dbUserData.id;
