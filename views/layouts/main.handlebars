@@ -31,7 +31,7 @@
         {{#if loggedIn}}
         <li class="tm-nav-item"><a href="/dashboard" class="tm-nav-link">
                             <i class="fas fa-users"></i> Dashboard </a></li>
-        <li class="tm-nav-item"><a href="/logout" class="tm-nav-link">
+        <li class="tm-nav-item"><a href="#" id="logout" class="tm-nav-link">
                             <i class="fas fa-users"></i> Logout </a></li>
         {{else}}
        <li class="tm-nav-item"><a href="/login" class="tm-nav-link">
@@ -73,6 +73,9 @@
             </footer>
         </main>
     </div>
+    {{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
