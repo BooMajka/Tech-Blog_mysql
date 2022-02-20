@@ -2,13 +2,15 @@ async function newFormHandler(event) {
 	event.preventDefault();
   
 	const title = document.querySelector('input[name="post-title"]').value;
-	const post_desc = document.querySelector('input[name="post-desc"]').value;
+	const description = document.querySelector('input[name="post-desc"]').value;
+  const img_url = document.querySelector("#post-img").value;
   
 	const response = await fetch(`/api/posts`, {
     method: "POST",
     body: JSON.stringify({
       title,
-      post_desc,
+      description,
+      img_url,
     }),
     headers: {
       "Content-Type": "application/json",
